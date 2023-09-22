@@ -30,12 +30,12 @@ import java.io.InputStream
 
 
 class MainActivity : AppCompatActivity(), ImageInterFace {
-    lateinit var viewModel: ImageViewModel
-    lateinit var btnTakeImage: Button
-    lateinit var btnChoseImage: Button
-    lateinit var btnSave: Button
-    lateinit var image: ImageView
-    var base64String: String? = null
+    private lateinit var viewModel: ImageViewModel
+    private lateinit var btnTakeImage: Button
+    private lateinit var btnChoseImage: Button
+    private lateinit var btnSave: Button
+    private lateinit var image: ImageView
+    private var base64String: String? = null
 
     private val CAMERA_PERMISSION_CODE = 101
     private val GALLERY_REQUEST_CODE = 103
